@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan Natal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="firstsnow.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Layar Awal -->
+   <div class="envelope-wrapper" id="envelopeWrapper" onclick="openEnvelope()">
+        <div class="envelope">
+            <div class="flap"></div>
+            <div class="pocket"></div>
+            <div class="letter">
+                <div class="text">Kartu Ucapan Natal Untukmu</div>
+            </div>
+            <div class="wax-seal">
+                <span class="seal-icon">🎄</span>
+            </div>
+        </div>
+        <p class="click-hint">Ketuk untuk membuka</p>
+    </div>
+
+
+    <!-- Kartu Utama -->
+    <div class="card-container" id="card">
+        <div class="ribbon"></div>
+
+        <div class="tree-container">
+            <div class="star">★</div>
+            <div class="tree-layer layer-1"></div>
+            <div class="tree-layer layer-2"></div>
+            <div class="tree-layer layer-3"></div>
+            <div class="trunk"></div>
+            
+            <!-- Hiasan Bola -->
+            <div class="bauble b1"></div>
+            <div class="bauble b2"></div>
+            <div class="bauble b3"></div>
+            <div class="bauble b4"></div>
+        </div>
+
+        <div class="message-content">
+            <p class="to-text">Untuk yang tersayang,</p>
+            <h2 id="recipient-name" class="handwritten-name">Teman</h2>
+            
+            <h1 class="main-title">Selamat Natal!</h1>
+            
+            <p class="wish-text">
+                Semoga kehangatan Natal memenuhi hatimu dengan damai, cinta, dan kebahagiaan yang tak berkesudahan.
+                Selamat berkumpul bersama orang-orang tersayang.
+            </p>
+
+            <div class="footer">
+                Love,<br>
+                <strong class="sender-name">Adam's Family</strong> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Link ke JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
