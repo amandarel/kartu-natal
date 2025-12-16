@@ -1,4 +1,3 @@
-// 1. CEK URL PARAMETER (Untuk Nama Penerima)
 window.onload = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const recipient = urlParams.get('to');
@@ -9,31 +8,26 @@ window.onload = function() {
     }
 };
 
-// 2. FUNGSI BUKA AMPLOP
 function openEnvelope() {
     const envelope = document.getElementById('envelopeWrapper');
     const card = document.getElementById('card');
     const music = document.getElementById('bgMusic');
 
-    // Tambahkan class 'open' untuk memicu animasi CSS amplop terbuka
     envelope.classList.add('open');
 
-    // Play Musik
     music.volume = 0.5;
     music.play().catch(e => console.log("Audio play failed"));
 
-    // Tunggu 1 detik (waktu animasi amplop), lalu hilangkan amplop & munculkan kartu
     setTimeout(() => {
-        envelope.classList.add('fade-out'); // Amplop menghilang pelan-pelan
+        envelope.classList.add('fade-out'); 
         setTimeout(() => {
-            envelope.style.display = 'none'; // Hapus amplop dari layar
-            card.classList.add('active'); // Munculkan kartu
-            startSnow(); // Mulai salju
+            envelope.style.display = 'none'; 
+            card.classList.add('active');
+            startSnow(); 
         }, 500);
     }, 1000);
 }
 
-// 3. EFEK SALJU
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
@@ -48,4 +42,5 @@ function createSnowflake() {
 
 function startSnow() {
     setInterval(createSnowflake, 100);
+
 }
