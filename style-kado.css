@@ -70,7 +70,7 @@ body {
 /* --- PERBAIKAN LEBAR KARTU --- */
 .christmas-card {
     position: absolute;
-    width: 550px; /* Diperlebar agar muat teks panjang */
+    width: 1000x; /* Diperlebar agar muat teks panjang */
     max-width: 95%; /* Agar aman di HP */
     padding: 30px 40px; /* Padding kiri-kanan ditambah */
     background: rgba(255, 255, 255, 0.1);
